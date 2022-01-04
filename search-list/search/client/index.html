@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Search Items</title>
+  </head>
+  <body>
+    <section class="responses " id="responses-div">
+      <div >
+        <div class="responses-div" id="placed-responce" >Error:404 occurred</div>
+        <div id="responses-cancel">&times;</div>
+      </div>
+       
+    </section>
+    <section class="popup">
+        
+      <div class="popup-div">
+          <div id="popup-cancel">&times;</div>
+        <div>
+          <div class="edited-content">
+
+            <form>
+              <div>
+                <label>GENUS:</label>
+                <input id="genus" type="text"/>
+              </div>
+              <div>
+                <label>NAME:</label>
+                <input id="name" type="text"/>
+              </div>
+              <div>
+                <label>FAMILY:</label>
+                <input id="family" type="text" />
+              </div>
+            </form>
+          </div>
+          <div class="editing-btn">
+            <button class="edit" id="editBtn">Update</button>
+            <button class="delete" id="deleteBtn">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="body-main">
+      <div class="main-header">
+        <h2>Your Items</h2>
+      </div>
+      <div class="main-search">
+        <form>
+          <div>
+            <input type="search" id="search" placeholder="Search by name..." />
+            <input
+              type="submit"
+              class="submit-active"
+              id="submit"
+              value="search"
+            />
+          </div>
+          <div>
+            <select id="select-btn">
+              <option selected disabled>Sort By</option>
+              <option>Id</option>
+              <option>Order</option>
+              <option>Name</option>
+              <option>Genus</option>
+              <option>Family</option>
+            </select>
+          </div>
+        </form>
+        <div id="body-contents">
+          <div class="header">
+            <div>Id</div>
+            <div>Genus</div>
+            <div>Name</div>
+            <div>Family</div>
+            <div>Order</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,433 @@
+* {
+  --primary-color: #003049;
+  --secondary-color: #d62828;
+  --main-color: #f77f00;
+  --temp-color: #fcbf49;
+  --tertiary-color: #eae2b7;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+}
+
+.body-main {
+  width: 100%;
+  max-width: 650px;
+  height: 70%;
+  -webkit-box-shadow: 0px 0px 5px 1px #9c9c9c;
+          box-shadow: 0px 0px 5px 1px #9c9c9c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body-main > div {
+  width: 100%;
+}
+
+.main-header {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-search {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-search > div {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #003049;
+  color: white;
+}
+
+.main-search > div > div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px (150px)[4];
+      grid-template-columns: 50px repeat(4, 150px);
+}
+
+.main-search > div > div > div {
+  border: 1px solid white;
+  border-left: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.5em;
+}
+
+.main-search > div .entry {
+  border: 1px solid white;
+  border-top: none;
+}
+
+.main-search > div .entry > div {
+  border: none;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 0.9rem;
+  padding: 0.5em;
+}
+
+.main-search > div .entry:hover {
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+.main-search > div .empty {
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-search > form {
+  width: 90%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-search > form > div {
+  width: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-search > form > div input[type="search"] {
+  padding: 0.4em;
+  background: var(--tertiary-color);
+  border: 1px solid var(--main-color);
+  border-right: none;
+}
+
+.main-search > form > div input[type="submit"] {
+  border: 1px solid var(--temp-color);
+  background: var(--main-color);
+  padding: 0.4em;
+}
+
+.main-search > form > div input[type="submit"]:hover {
+  background: var(--temp-color);
+  color: var(--tertiary-color);
+}
+
+.main-search > form > div select {
+  width: 100px;
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.popup-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup-div {
+  width: 50%;
+  height: 50%;
+  max-height: 300px;
+  max-width: 300px;
+  background: var(--main-color);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.popup-div > div {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-div > div .editing-btn {
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.popup-div > div .editing-btn > button {
+  padding: 0.5em 2em;
+  cursor: pointer;
+  border: none;
+  color: var(--tertiary-color);
+}
+
+.popup-div > div .editing-btn .edit {
+  background: var(--primary-color);
+}
+
+.popup-div > div .editing-btn .edit:hover {
+  background: #014468;
+}
+
+.popup-div > div .editing-btn .delete {
+  background: var(--secondary-color);
+}
+
+.popup-div > div .editing-btn .delete:hover {
+  background: #b62222;
+}
+
+.popup-div > div .edited-content {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-div > div .edited-content > form {
+  height: 80%;
+}
+
+.popup-div > div .edited-content > form > div {
+  width: 100%;
+}
+
+.popup-div > div .edited-content > form > div > label {
+  display: block;
+}
+
+.popup-div > div .edited-content > form > div > input {
+  width: 100%;
+  padding: 0.6em .2em;
+  margin: 0.4em 0em;
+  background: var(--main-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  caret-color: var(--tertiary-color);
+  border-radius: 2px;
+}
+
+.popup-div > div .edited-content > form > div > input:focus {
+  border: 1px solid var(--tertiary-color);
+}
+
+.popup-div #popup-cancel {
+  width: 35px;
+  height: 35px;
+  padding: .6em;
+  border-radius: 0px 5px 0px 0px;
+  background: var(--main-color);
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  cursor: pointer;
+}
+
+.popup-div #popup-cancel:hover {
+  color: #080808;
+}
+
+.responses {
+  width: 50%;
+  padding: .5em;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+.responses > div {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.responses > div .responses-div {
+  width: calc(100% - 30px);
+}
+
+.responses > div #responses-cancel {
+  color: white;
+  width: 30px;
+  font-size: 1.5rem;
+  font-weight: 550;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.responses > div #responses-cancel:hover {
+  color: black;
+}
+
+.response-active {
+  display: inline;
+}
+
+.response-updated {
+  background: #13bb13;
+  border: 1px solid green;
+}
+
+.response-error {
+  background: #bb1313;
+  border: 1px solid maroon;
+}
+/*# sourceMappingURL=index.css.map */

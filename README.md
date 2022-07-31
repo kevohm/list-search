@@ -15,6 +15,6 @@ start the server by running
 
 <code>nodemon app</code>
 
-check site at [http://localhost:3045/v1/api/] 
+check site at (http://localhost:3045/v1/api/)
 
 ## leave a star :)

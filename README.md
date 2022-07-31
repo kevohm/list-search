@@ -8,13 +8,13 @@ run
 <code> git install </code>
 
 * database
-  * setup a mongodb atlas MONGO_URI link
+  * setup a mongodb atlas <b>MONGO_URI</b> link
   * setup a env to store the PORT variable
 ## run server
 start the server by running
 
 <code>nodemon app</code>
 
-check site at http://localhost:3045/v1/api/
+check site at [http://localhost:3045/v1/api/] 
 
 ## leave a star :)

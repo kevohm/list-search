@@ -2,10 +2,10 @@
 This is a website that allows one to sort and search from a list in database.
 This is a basic website.
 * Stack
-  * [x] vanila JS
-  * Epress JS
-  * Mondo DB
-  * Node Js
+  - [x] vanila JS
+  - [x] Epress JS
+  - [x] Mondo DB
+  - [x] Node Js
 ## installation
 * setup
 run  

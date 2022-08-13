@@ -2,7 +2,7 @@
 This is a website that allows one to sort and search from a list in database.
 This is a basic website.
 * Stack
-  * <i style="color:red">vanila JS<i>
+  * <i style="color:red">vanila JS</i>
   * Epress JS
   * Mondo DB
   * Node Js
